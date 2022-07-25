@@ -1,9 +1,9 @@
 /* eslint-disable import/first */
 import {useState} from "react";;
-import Icon from "../../components/Icon/Icon"
+import Icon from "../Icon/Icon"
 import "./style.css"
 
-export default function Flashcard(props) {
+export default function FlashCard(props) {
 
     function stageAssemble() {
         
@@ -14,7 +14,7 @@ export default function Flashcard(props) {
                     className="panel closed"
                     onClick={() => setStatus({...status, stage: 2})}
                  >
-                    <p>Flashcard {index}</p>
+                    <p>FlashCard {index}</p>
                     <Icon icon="play" /> 
                 </div>
             )
@@ -65,7 +65,7 @@ export default function Flashcard(props) {
         if(stage === 4) {
             return(
                 <div className="panel closed finished">
-                    <p className={result}>Flashcard {index}</p>
+                    <p className={result}>FlashCard {index}</p>
                     <Icon icon={result} />
                 </div>
             )
@@ -79,5 +79,5 @@ export default function Flashcard(props) {
     const {front, back, index, finished} = props;
 
     const content = stageAssemble();
-    return <div className="Flashcard">{content}</div>
+    return <div className="FlashCard">{content}</div>
 }

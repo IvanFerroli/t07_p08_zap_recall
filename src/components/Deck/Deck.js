@@ -4,7 +4,7 @@ import Data from "../../Data/Data";
 import "./style.css";
 import SmallLogo from "../../assets/img/small-logo.png";
 
-import Flashcard from "../Flashcard/Flashcard";
+import FlashCard from "../FlashCard/FlashCard";
 import Icon from "../Icon/Icon";
 
 export default function Deck() {
@@ -20,7 +20,7 @@ export default function Deck() {
     } else {
       return questions.map((question, index) => {
         const { front, back } = question;
-        return <Flashcard
+        return <FlashCard
             key={front + index}
             index={index + 1}
             front={front + index}
@@ -35,7 +35,7 @@ export default function Deck() {
     let result = <></>;
 
     if (answers.length === questions.length && questions.length > 0) {
-      if (!answers.includes("erro")) {
+      if (!answers.includes("error")) {
         result = (
           <div className="result">
             <span>
@@ -73,7 +73,7 @@ export default function Deck() {
   return (
     <div className="Deck">
       <header>
-        <img src={SmallLogo} alt="ZapREcall" />
+        <img src={SmallLogo} alt="ZapRecall" />
         <h1>Zap Recall</h1>
       </header>
       <main>{flashcards}</main>
