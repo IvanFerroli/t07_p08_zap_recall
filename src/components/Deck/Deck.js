@@ -25,7 +25,7 @@ export default function Deck() {
             index={index + 1}
             front={front + index}
             back={back}
-            finished={(answer) => setAnswers(...answers, answer)}
+            finished={answer => setAnswers(...answers, answer)}
           />;
       });
     }
@@ -62,7 +62,8 @@ export default function Deck() {
         <p>
           {answers.length}/{questions.length} concluídos
         </p>
-        {answers.map((answer) => <Icon icon={answer} />)}
+        {console.log(answers)}
+        {(answer => <Icon icon={answer} />)}
       </>
     );
   }
@@ -85,3 +86,4 @@ export default function Deck() {
 function comparator() {
   return Math.random() - 0.5;
 }
+

@@ -1,11 +1,11 @@
-import { ReactComponent as Zap } from "./../../assets/img/checkmark-circle-icon.svg";
-import { ReactComponent as Error } from "./../../assets/img/close-circle-icon.svg";
-import { ReactComponent as Doubt } from "./../../assets/img/help-circle-icon.svg";
-import { ReactComponent as Play } from "./../../assets/img/play-outline-icon.svg";
+import { ReactComponent as Zap } from "../../assets/img/checkmark-circle-icon.svg";
+import { ReactComponent as Error } from "../../assets/img/close-circle-icon.svg";
+import { ReactComponent as Doubt } from "../../assets/img/help-circle-icon.svg";
+import { ReactComponent as Play } from "../../assets/img/play-outline-icon.svg";
 
-import Party from "./../../assets/img/party.png";
-import Arrow from "./../../assets/img/arrow.png";
-import Sad from "./../../assets/img/sad.png";
+import Party from "../../assets/img/party.png";
+import Arrow from "../../assets/img/arrow.png";
+import Sad from "../../assets/img/sad.png";
 
 import "./style.css";
 
