@@ -1,0 +1,61 @@
+.Deck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: var(--background-color);
+    overflow-y: auto;
+}
+
+.Deck::-webkit-scrollbar {
+    display: none;
+}
+
+.Deck header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 36px;
+    color: white;
+    font-family: "Righteous";
+    z-index: 1;
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+.Deck header img{
+    width: 52px;
+    height: 60px;
+}
+
+.Deck main{
+    margin: 150px 0px;
+}
+
+.Deck .result{
+    margin-bottom: 20px;
+}
+
+.Deck footer{
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 70px;
+    padding: 25px 115px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,20 @@
+*{
+box-sizing: border-box;
+--background-color: #fb6b6b;
+--card-background-color: #ffffd4;
+--black: #333333;
+--zap-color: #2fbe34;
+--doubt-color: #ff922e;
+--error-color: #ff3030;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--black);
+    font-family: 'recursive', sans-serif;
+}

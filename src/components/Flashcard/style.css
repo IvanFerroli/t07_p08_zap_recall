@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    --cor-fundo: #FB6B6B;
+    --cor-fundo-card: #FFFFD4;
+    --cor-nao-lembrei: #FF3030;
+    --cor-quase-nao-lembrei: #FF922E;
+    --cor-zap: #2FBE34;
+    --preto: #333333;
+  }
+
+.FlashCard .panel{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 25px 0px;
+    padding:23px 15px;
+    cursor: pointer;
+    font-family: 'recursive', cursive;
+}
+
+.FlashCard .panel.closed{
+    max-height: 65px;
+}
+
+.FlashCard .panel.open{
+    display: block;
+    position: relative;
+    min-height: 130px;
+    cursor: default;
+    background-color: var(--card-background-color);
+}
+
+.FlashCard .panel.open .icon{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.FlashCard .buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.FlashCard .buttons *{
+    color: white;
+    width: 85px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    cursor: pointer;
+    border: none;
+    font-family: 'recursive', cursive;
+    font-size: 12px;
+}
+
+.FlashCard .buttons .error{
+    background-color: var(--error-color);
+}
+
+.FlashCard .buttons .doubt{
+    background-color: var(--doubt-color);
+}
+
+.FlashCard .buttons .zap{
+    background-color: var(--zap-color);
+}
+
+.FlashCard .finished{
+    cursor: default;
+}
+
+.FlashCard .finished p{
+    text-decoration: line-through;
+}
+
+.FlashCard .finished .error{
+    color: var(--error-color);
+}
+
+.FlashCard .finished .doubt{
+    color: var(--doubt-color);
+}
+
+.FlashCard .finished .zap{
+    color: var(--zap-color);
+}
